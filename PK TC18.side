@@ -1,0 +1,128 @@
+{
+  "id": "7cbefef0-8c0f-41a5-8acc-8d6974f1aa81",
+  "version": "2.0",
+  "name": "PK TC18",
+  "url": "https://demo.guru99.com",
+  "tests": [{
+    "id": "b3816304-5b89-40e1-ac0d-e125610c0ff0",
+    "name": "PK 18TC",
+    "commands": [{
+      "id": "dd8b3fb5-5dc2-4115-83eb-18797370fd43",
+      "comment": "",
+      "command": "open",
+      "target": "/v4/manager/Managerhomepage.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7d26569-07aa-4d45-8c2a-a7b6e5ae7aae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "743x723",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64241b03-2faa-494b-ae3c-68933d589de5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Account",
+      "targets": [
+        ["linkText=New Account", "linkText"],
+        ["css=.menusubnav > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New Account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'addAccount.php')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddb9b454-7eee-4340-aee3-479488fb147f",
+      "comment": "",
+      "command": "click",
+      "target": "name=cusid",
+      "targets": [
+        ["name=cusid", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='cusid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e11476-1bd8-4a74-9145-d93d5c007d4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=cusid",
+      "targets": [
+        ["name=cusid", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='cusid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "27690"
+    }, {
+      "id": "9a9aa4d2-3b38-4a94-a6cd-82567c95d90c",
+      "comment": "",
+      "command": "click",
+      "target": "name=selaccount",
+      "targets": [
+        ["name=selaccount", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='selaccount']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b74688c-0171-45a1-8e6f-0d7b4f4577c2",
+      "comment": "",
+      "command": "select",
+      "target": "name=selaccount",
+      "targets": [],
+      "value": "label=Current"
+    }, {
+      "id": "ae4bb9e6-c39b-4b48-a96c-bac425c88e17",
+      "comment": "",
+      "command": "click",
+      "target": "name=inideposit",
+      "targets": [
+        ["name=inideposit", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='inideposit']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acd05082-82d8-4f8b-9006-ef9589250ba4",
+      "comment": "",
+      "command": "type",
+      "target": "name=inideposit",
+      "targets": [
+        ["name=inideposit", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='inideposit']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "4790f692-4cdb-4ad2-b0bb-9e9fa4c68235",
+      "comment": "",
+      "command": "click",
+      "target": "name=button2",
+      "targets": [
+        ["name=button2", "name"],
+        ["css=tr:nth-child(5) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='button2']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d3529b1-bd0e-427f-9c87-40a3f31e9318",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b3816304-5b89-40e1-ac0d-e125610c0ff0"]
+  }],
+  "urls": ["https://demo.guru99.com/"],
+  "plugins": []
+}
